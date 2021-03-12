@@ -1,0 +1,48 @@
+.circle {
+	background: white;
+	border-radius: 100%;
+	border: 3px solid transparent;
+	box-shadow: $box-shadow;
+	display: flex;
+	justify-content: center;
+	justify-self: center;
+	align-items: center;
+	margin-top: 0.7rem;
+	margin-bottom: 1rem;
+
+	&.sm {
+		width: 116px;
+		height: 116px;
+		border-color: getColour(accent);
+	}
+
+	&.med {
+		width: 211px;
+		height: 211px;
+		border-color: getColour(secondary);
+	}
+
+	&.lrg {
+		width: 268px;
+		height: 268px;
+		border-color: getColour(primary);
+	}
+}
+
+.circles-container {
+	margin: 3rem auto;
+	@extend .container-column;
+
+	> div {
+		margin-bottom: 2rem;
+	}
+}
+.small-circle {
+	margin: 2rem auto;
+	text-align: center;
+}
+
+.small-circle i {
+	font-size: 39px;
+	color: white;
+}
